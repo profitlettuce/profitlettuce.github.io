@@ -165,9 +165,10 @@ function playerReset() {
     player.pos.x = (arena[0].length / 2 | 0) -
                    (player.matrix[0].length / 2 | 0);
     if (collide(arena, player)) {
-        arena.forEach(row => row.fill(0));
-        player.score = 0;
-        updateScore();
+        window.location.href = "https://profitlettuce.github.io/tetris/gameover.html"
+        //arena.forEach(row => row.fill(0));
+        //player.score = 0;
+        //updateScore();
     }
 }
 
